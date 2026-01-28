@@ -60,7 +60,7 @@ export default function Navbar() {
                         {item.name}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
-                        <ul className="grid w-[200px] gap-2 p-4 bg-black border border-white/10">
+                        <ul className="grid w-50 gap-2 p-4 bg-black border border-white/10">
                           {item.children.map((child) => (
                             <li key={child.name}>
                               <Link href={child.href}  passHref>
