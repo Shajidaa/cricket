@@ -7,8 +7,8 @@ import Link from 'next/link'
 
 export default function NewsCard({ news }: { news: NewsItem }) {
   return (
-   <Link href={`/news/${news.id}`} key={news.id} className="cursor-pointer group"> 
-      <div className="overflow-hidden rounded-lg mb-4 border">
+   <Link href={`/news/${news.id}`} key={news.id} className="cursor-pointer  group"> 
+      <div className="overflow-hidden md:max-w-96    rounded-lg mb-4 border">
         <Image
           src={news.image}
           alt={news.title}
@@ -19,7 +19,7 @@ export default function NewsCard({ news }: { news: NewsItem }) {
         />
       </div>
       
-      <h2 className="text-xl font-bold mb-2 transition-colors duration-300 group-hover:text-red-500">
+      <h2 className="text-xl font-bold md:max-w-96 mb-2 transition-colors duration-300 group-hover:text-red-500">
         {news.title}
       </h2>
       

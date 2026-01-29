@@ -2,8 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 // import { Metadata } from 'next'
-import { getNewsById } from '@/services/newsService'
+import { getAllNews, getNewsById } from '@/services/newsService'
 import { NewsItem } from '@/types'
+import NewsCard from '@/components/cards/NewsCard'
 
 
 
@@ -13,13 +14,17 @@ export default async function NewsDetails({ params }: { params: Promise<{ id: st
   const { id } = await params; 
   
   const newsItem: NewsItem | null = await getNewsById(id);
-  
-
 
   if (!newsItem) {
   
     notFound();
   }
+
+ const allNews = await getAllNews();
+  const relatedNews = allNews
+    .filter((item: NewsItem) => item.id !== id && item.category === newsItem.category)
+    .slice(0, 3);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8">
@@ -96,20 +101,19 @@ export default async function NewsDetails({ params }: { params: Promise<{ id: st
               </div>
             )}
           </div>
-
-        
-        </div>
-
-        {/* Navigation */}
-        <div className="flex justify-center">
-          <Link
-            href="/news"
-            className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors font-medium"
-          >
-            View More News
-          </Link>
         </div>
       </div>
+      {relatedNews.length > 0 && (
+  <div className="container mx-auto px-4 pb-8">
+    <h3 className="text-xl font-bold mb-4">More from {newsItem.category}</h3>
+    <div className="space-y-4">
+      {relatedNews.map((news: NewsItem) => (
+      <NewsCard key={news.id} news={news} />
+
+      ))}
+    </div>
+  </div>
+)}
     </div>
   )
 }
