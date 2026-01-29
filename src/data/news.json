@@ -47,4 +47,17 @@
     "status": "Official Ruling",
     "tags": ["T20 World Cup", "ICC", "BCB", "Cricket News"]
   }
+  ,
+  {
+    "id": "NEWS005",
+    "title": "ICC Expels Bangladesh from T20 World Cup 2026 Amid Security Stance",
+    "date": "January 25, 2026",
+    "category": "Announcement",
+    "bpl": "Tournament Crisis",
+    "wbbl": null,
+    "image": "https://static.toiimg.com/thumb/msid-91002551,width-400,resizemode-4/91002551.jpg",
+    "details": "In a major blow to world cricket, the ICC has expelled Bangladesh from the upcoming Men's T20 World Cup after the BCB refused to travel to India for their fixtures, citing security concerns. Scotland has been named as the replacement team.",
+    "status": "Official Ruling",
+    "tags": ["T20 World Cup", "ICC", "BCB", "Cricket News"]
+  }
 ]

@@ -1,7 +1,7 @@
 import NewsCard from "@/components/cards/NewsCard";
 import { getAllNews } from "@/services/newsService";
 import { NewsItem } from "@/types";
-import Image from "next/image";
+
 
 export default async function NewsPage() {
   const allNews = await getAllNews();

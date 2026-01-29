@@ -24,6 +24,6 @@ export default function NewsCard({ news }: { news: NewsItem }) {
       </h2>
       
       <p className="text-sm text-gray-500">{news.date}</p>
-    </Link>
+    </Link>  
   )
 }
