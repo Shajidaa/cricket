@@ -5,7 +5,12 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
    images: {
     remotePatterns: [
-      {
+    {
+        protocol: 'https',
+        hostname: 'resources.melbourne-renegades.pulselive.com',
+        pathname: '/**', 
+      },
+       {
         protocol: 'https',
         hostname: 'static.toiimg.com',
         port: '',
@@ -18,6 +23,7 @@ const nextConfig: NextConfig = {
         pathname: '/**',
         search: '',
       },
+      
     ],
   },
 };
