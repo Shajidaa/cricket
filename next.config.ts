@@ -13,15 +13,13 @@ const nextConfig: NextConfig = {
        {
         protocol: 'https',
         hostname: 'static.toiimg.com',
-        port: '',
         pathname: '/thumb/**',
-        search: '',
+      
       },{
         protocol: 'https',
-        hostname: 'example.com',
-        port: '',
-        pathname: '/**',
-        search: '',
+        hostname: 'images.unsplash.com',
+         pathname: '/**',
+       
       },
       
     ],

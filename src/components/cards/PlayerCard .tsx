@@ -1,11 +1,13 @@
 import { Player } from '@/types'
+import Image from 'next/image'
 
 export default function PlayerCard({ player }: { player: Player }) {
   return (
     <div className="group cursor-pointer relative bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
       {/* Player Image with Gradient Overlay */}
       <div className="relative h-64 overflow-hidden bg-gray-200">
-        <img 
+        <Image
+        fill
           src={player.image} 
           alt={player.name}
           className="w-full h-full object-cover transition-scale duration-500 group-hover:scale-110"
