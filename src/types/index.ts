@@ -21,3 +21,23 @@ export interface VideoItem {
   category: string;
   description: string;
 }
+
+
+export interface Player {
+  id: string;
+  name: string;
+  league: string;
+  image: string;
+  number: number;
+
+  personal_details: {
+  dob: string;
+  position: string; 
+
+  batting_style: string;
+  bowling_style: string;
+  country: string;  
+  }
+
+  player_story: string;
+}

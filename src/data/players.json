@@ -1,0 +1,347 @@
+
+  [ {
+      "id": "ren-01",
+      "name": "Sophie Molineux",
+      "league": "WBBL",
+      "image": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&q=80&w=600",
+      "number": 23,
+      "personal_details": {
+        "dob": "17 January 1998",
+        "position": "Captain / All-Rounder",
+        "batting_style": "Left Handed Bat",
+        "bowling_style": "Left-Arm Orthodox",
+        "country": "Australia"
+      },
+      "player_story": "Sophie Molineux is a cornerstone of the Melbourne Renegades and a two-time ICC T20 World Cup winner with Australia..."
+    },
+    {
+      "id": "ren-02",
+      "name": "Will Sutherland",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1593341646782-e0b495cff86d?auto=format&fit=crop&q=80&w=600",
+      "number": 12,
+      "personal_details": {
+        "dob": "27 October 1999",
+        "position": "Captain / All-Rounder",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Fast Medium",
+        "country": "Australia"
+      },
+      "player_story": "Will Sutherland is the dynamic captain of the Renegades' BBL squad, known for his 'clutch' performances..."
+    },
+    {
+      "id": "ren-03",
+      "name": "Jason Behrendorff",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1540747913346-19e3adca174f?auto=format&fit=crop&q=80&w=600",
+      "number": 5,
+      "personal_details": {
+        "dob": "20 April 1990",
+        "position": "Fast Bowler",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Left-Arm Fast",
+        "country": "Australia"
+      },
+      "player_story": "Jason Behrendorff is a world-class left-arm quick, famous for his ability to swing the new ball..."
+    },
+    {
+      "id": "ren-04",
+      "name": "Josh Brown",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?auto=format&fit=crop&q=80&w=600",
+      "number": 6,
+      "personal_details": {
+        "dob": "26 December 1993",
+        "position": "Batter",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Off Spin",
+        "country": "Australia"
+      },
+      "player_story": "Josh Brown became a household name after his explosive 140-run innings in the BBL|13 finals..."
+    },
+    {
+      "id": "ren-05",
+      "name": "Alice Capsey",
+      "league": "WBBL",
+      "image": "https://images.unsplash.com/photo-1608010195573-5689e41bbacc?auto=format&fit=crop&q=80&w=600",
+      "number": 64,
+      "personal_details": {
+        "dob": "11 August 2004",
+        "position": "All-Rounder",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Off Spin",
+        "country": "England"
+      },
+      "player_story": "Alice Capsey is widely considered the brightest young star in English cricket..."
+    },
+    {
+      "id": "ren-06",
+      "name": "Emma de Broughe",
+      "league": "WBBL",
+      "image": "https://images.unsplash.com/photo-1512715502774-c6307068565a?auto=format&fit=crop&q=80&w=600",
+      "number": 2,
+      "personal_details": {
+        "dob": "6 September 2000",
+        "position": "Batter",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Off Spin",
+        "country": "Australia"
+      },
+      "player_story": "Emma de Broughe is a multi-talented athlete who excelled in both hockey and cricket..."
+    },
+    {
+      "id": "ren-07",
+      "name": "Harry Dixon",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1590487988256-9ed24133863e?auto=format&fit=crop&q=80&w=600",
+      "number": 22,
+      "personal_details": {
+        "dob": "16 February 2005",
+        "position": "Batter",
+        "batting_style": "Left Handed Bat",
+        "bowling_style": "Right-Arm Off Spin",
+        "country": "Australia"
+      },
+      "player_story": "Harry Dixon is one of Australia's most promising young batting talents..."
+    },
+    {
+      "id": "ren-08",
+      "name": "Brendan Doggett",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1593341646782-e0b495cff86d?auto=format&fit=crop&q=80&w=600",
+      "number": 35,
+      "personal_details": {
+        "dob": "3 May 1994",
+        "position": "Fast Bowler",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Fast Medium",
+        "country": "Australia"
+      },
+      "player_story": "Brendan Doggett is a high-velocity fast bowler known for his skiddy pace..."
+    },
+    {
+      "id": "ren-09",
+      "name": "Deandra Dottin",
+      "league": "WBBL",
+      "image": "https://images.unsplash.com/photo-1593341646782-e0b495cff86d?auto=format&fit=crop&q=80&w=600",
+      "number": 5,
+      "personal_details": {
+        "dob": "21 June 1991",
+        "position": "All-Rounder",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Fast",
+        "country": "West Indies"
+      },
+      "player_story": "Known as the 'World Boss' of women’s cricket, Deandra Dottin is a legendary figure..."
+    },
+    {
+      "id": "ren-10",
+      "name": "Tess Flintoff",
+      "league": "WBBL",
+      "image": "https://images.unsplash.com/photo-1593341646647-75b32930e4a1?auto=format&fit=crop&q=80&w=600",
+      "number": 5,
+      "personal_details": {
+        "dob": "31 March 2003",
+        "position": "All-Rounder",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Medium Fast",
+        "country": "Australia"
+      },
+      "player_story": "Tess Flintoff is a rising star who holds the record for the fastest fifty in WBBL history..."
+    },
+    {
+      "id": "ren-11",
+      "name": "Jake Fraser-McGurk",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1512715502774-c6307068565a?auto=format&fit=crop&q=80&w=600",
+      "number": 23,
+      "personal_details": {
+        "dob": "11 April 2002",
+        "position": "Batter",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Leg Spin",
+        "country": "Australia"
+      },
+      "player_story": "Jake Fraser-McGurk is currently one of the most talked-about names in world cricket..."
+    },
+    {
+      "id": "ren-12",
+      "name": "Milly Illingworth",
+      "league": "WBBL",
+      "image": "https://images.unsplash.com/photo-1540747913346-19e3adca174f?auto=format&fit=crop&q=80&w=600",
+      "number": 51,
+      "personal_details": {
+        "dob": "15 July 2005",
+        "position": "Fast Bowler",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Fast",
+        "country": "Australia"
+      },
+      "player_story": "Milly Illingworth is a teenage speedster from country Victoria..."
+    },
+    {
+      "id": "ren-13",
+      "name": "Caleb Jewell",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1593341646782-e0b495cff86d?auto=format&fit=crop&q=80&w=600",
+      "number": 32,
+      "personal_details": {
+        "dob": "21 April 1997",
+        "position": "Batter",
+        "batting_style": "Left Handed Bat",
+        "bowling_style": "Left-Arm Medium",
+        "country": "Australia"
+      },
+      "player_story": "Caleb Jewell is an elegant left-handed opening batter from Tasmania..."
+    },
+    {
+      "id": "ren-14",
+      "name": "Hassan Khan",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?auto=format&fit=crop&q=80&w=600",
+      "number": 3,
+      "personal_details": {
+        "dob": "16 October 1998",
+        "position": "All-Rounder",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Left-Arm Orthodox",
+        "country": "USA / Pakistan"
+      },
+      "player_story": "Hassan Khan is a versatile all-rounder who first gained attention in the PSL..."
+    },
+    {
+      "id": "ren-15",
+      "name": "Nathan Lyon",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1590487988256-9ed24133863e?auto=format&fit=crop&q=80&w=600",
+      "number": 67,
+      "personal_details": {
+        "dob": "20 November 1987",
+        "position": "Spin Bowler",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Off Spin",
+        "country": "Australia"
+      },
+      "player_story": "Commonly known as 'The GOAT', Nathan Lyon is Australia's most successful off-spinner..."
+    },
+    {
+      "id": "ren-16",
+      "name": "Fergus O'Neill",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1533560904424-a0c61dc306fc?auto=format&fit=crop&q=80&w=600",
+      "number": 69,
+      "personal_details": {
+        "dob": "27 January 2001",
+        "position": "Medium-Fast Bowler",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Fast Medium",
+        "country": "Australia"
+      },
+      "player_story": "Fergus O'Neill is a rising star in Victorian cricket, earning his spot through wickets..."
+    },
+    {
+      "id": "ren-17",
+      "name": "Oliver Peake",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&q=80&w=600",
+      "number": 19,
+      "personal_details": {
+        "dob": "11 September 2006",
+        "position": "Batter",
+        "batting_style": "Left Handed Bat",
+        "bowling_style": "Right-Arm Off Spin",
+        "country": "Australia"
+      },
+      "player_story": "Oliver Peake is the youngest member of the squad and an exciting prospect..."
+    },
+    {
+      "id": "ren-18",
+      "name": "Muhammad Rizwan",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?auto=format&fit=crop&q=80&w=600",
+      "number": 16,
+      "personal_details": {
+        "dob": "1 June 1992",
+        "position": "Wicket Keeper - Batter",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "N/A",
+        "country": "Pakistan"
+      },
+      "player_story": "Muhammad Rizwan is a world-class wicket-keeper batter..."
+    },
+    {
+      "id": "ren-19",
+      "name": "Tom Rogers",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1533560904424-a0c61dc306fc?auto=format&fit=crop&q=80&w=600",
+      "number": 8,
+      "personal_details": {
+        "dob": "3 March 1994",
+        "position": "Fast Bowler",
+        "batting_style": "Left Handed Bat",
+        "bowling_style": "Right-Arm Fast Medium",
+        "country": "Australia"
+      },
+      "player_story": "Tom Rogers is a crafty fast bowler who has become a T20 specialist..."
+    },
+    {
+      "id": "ren-20",
+      "name": "Tim Seifert",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1590487988256-9ed24133863e?auto=format&fit=crop&q=80&w=600",
+      "number": 43,
+      "personal_details": {
+        "dob": "14 December 1994",
+        "position": "Wicket Keeper - Batter",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "N/A",
+        "country": "New Zealand"
+      },
+      "player_story": "Tim Seifert is a dynamic New Zealand international known for explosive batting..."
+    },
+    {
+      "id": "ren-21",
+      "name": "Naomi Stalenberg",
+      "league": "WBBL",
+      "image": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&q=80&w=600",
+      "number": 10,
+      "personal_details": {
+        "dob": "18 April 1994",
+        "position": "Batter",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Medium",
+        "country": "Australia"
+      },
+      "player_story": "Naomi Stalenberg is a powerful right-handed batter..."
+    },
+    {
+      "id": "ren-22",
+      "name": "Georgia Wareham",
+      "league": "WBBL",
+      "image": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?auto=format&fit=crop&q=80&w=600",
+      "number": 32,
+      "personal_details": {
+        "dob": "26 May 1999",
+        "position": "All-Rounder",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Leg Spin",
+        "country": "Australia"
+      },
+      "player_story": "Georgia Wareham, nicknamed 'Wolfie,' is one of the premier leg-spinners..."
+    },
+    {
+      "id": "ren-23",
+      "name": "Adam Zampa",
+      "league": "BBL",
+      "image": "https://images.unsplash.com/photo-1540747913346-19e3adca174f?auto=format&fit=crop&q=80&w=600",
+      "number": 88,
+      "personal_details": {
+        "dob": "31 March 1992",
+        "position": "Spin Bowler",
+        "batting_style": "Right Handed Bat",
+        "bowling_style": "Right-Arm Leg Spin",
+        "country": "Australia"
+      },
+      "player_story": "Adam Zampa is Australia’s premier white-ball spinner..."
+    }
+  ]
