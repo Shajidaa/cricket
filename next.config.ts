@@ -20,6 +20,16 @@ const nextConfig: NextConfig = {
         hostname: 'images.unsplash.com',
         pathname: '/**',
      },  
+      {
+        protocol: 'https',
+        hostname: 'tigercricket.com.bd',
+        pathname: '/**',
+     },
+     {
+        protocol: 'https',
+        hostname: 'static.cricbuzz.com',
+        pathname: '/**',
+     },  
     ],
   },
 };

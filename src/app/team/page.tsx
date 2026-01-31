@@ -1,7 +1,8 @@
+import TeamSection from "@/components/sections/TeamSection";
 
 
 export default function TeamPage() {
   return (
-    <div>TeamPage</div>
+    <div><TeamSection /></div>
   )
 }
