@@ -3,6 +3,7 @@ export interface NewsItem {
   id: string
   title: string
   date: string
+  league: string
   category: string
   bpl: string | null
   wbbl: string | null
