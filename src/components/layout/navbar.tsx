@@ -30,7 +30,7 @@ export default function Navbar() {
   const [isTeamOpen, setIsTeamOpen] = React.useState(false)
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b-4 border-red-600 bg-black/95 backdrop-blur px-4">
+    <nav className="sticky top-0 z-50 w-full  bg-black/95 backdrop-blur px-4">
       <div className="container mx-auto flex h-20 items-center justify-between">
 
         {/* Logo */}
