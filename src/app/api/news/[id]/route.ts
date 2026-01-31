@@ -1,12 +1,14 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import newsData from '@/data/news.json';
 
 export async function GET(
-  request: Request,
-  { params }: { params: { id: string } }
+  request: NextRequest, 
+  { params }: { params: Promise<{ id: string }> } 
 ) {
-  try {
-    const { id } = await params; 
+  // Await the params to get the id
+ try{
+  const { id } = await params;
+ 
 
     const newsItem = newsData.find((item) => item.id === id);
 
