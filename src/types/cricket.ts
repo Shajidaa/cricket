@@ -1,13 +1,36 @@
 // types/cricket.ts
+export interface Innings {
+    inningsId: number;
+    runs: number;
+    wickets: number;
+    overs: number;
+}
+
+export interface TeamScore {
+    inngs1?: Innings;
+    inngs2?: Innings;
+}
+
+export interface MatchScore {
+    team1Score?: TeamScore;
+    team2Score?: TeamScore;
+}
+
 export interface Match {
     matchInfo: {
         matchId: number;
+        seriesId: number;
         seriesName: string;
+        matchDesc: string;
+        matchFormat: string;
         status: string;
         venueInfo: { ground: string; city: string };
-        team1: { teamName: string };
-        team2: { teamName: string };
+        team1: { teamName: string; teamSName?: string };
+        team2: { teamName: string; teamSName?: string };
+        startDate?: string;
+        endDate?: string;
     };
+    matchScore?: MatchScore;
 }
 
 export interface TypeMatch {
