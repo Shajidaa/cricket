@@ -1,14 +1,28 @@
 import React from 'react'
 import NewsCard from "@/components/cards/NewsCard";
-import { getAllNews } from "@/services/newsService";
 import { NewsItem } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
+import newsData from '@/data/news.json';
 
 export default async function LatestNewsSection() {
-  const allNews: NewsItem[] = await getAllNews();
+  const allNews: NewsItem[] = newsData;
 
 
+
+  // Check if we have news data
+  if (!allNews || allNews.length === 0) {
+    return (
+      <section className="mt-30 mb-20 relative overflow-hidden">
+        <div className="container mx-auto p-5">
+          <h1 className="text-5xl font-black italic text-white tracking-tighter border-l-8 border-red-600 pl-4 uppercase">
+            Latest News
+          </h1>
+          <p className="text-gray-400 mt-4">No news available at the moment.</p>
+        </div>
+      </section>
+    );
+  }
 
   // প্রথমটা ফিচারড নিউজ, বাকিগুলো গ্রিডে
   const featured = allNews[0];

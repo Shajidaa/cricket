@@ -2,7 +2,7 @@ export async function getAllPlayers() {
   try {
 
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"}/api/players`, {
-      next: { revalidate: 60 },
+      next: { revalidate: 360 },
     });
 
     if (!res.ok) {

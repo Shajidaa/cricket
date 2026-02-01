@@ -1,30 +1,17 @@
 import { NewsItem } from "@/types";
+import newsData from '@/data/news.json';
 
-// export async function getAllNews() {
-//   try {
-
-//     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"}/api/news`, {
-//       next: { revalidate: 60 },
-//     });
-
-//     if (!res.ok) {
-//       throw new Error('There was a problem loading the news.');
-//     }
-
-//     return res.json();
-//   } catch (error) {
-//     console.error("News Fetch Error:", error);
-//     return [];
-//   }
-// }
-// src/services/newsService.ts
 export async function getAllNews() {
-  // প্রোডাকশন আর লোকাল হোস্টের ঝামেলা এড়াতে এই ট্রিকটা কর
+  // During build time, use static data instead of API call
+  if (process.env.NODE_ENV === 'production' || !process.env.NEXT_PUBLIC_API_URL) {
+    return newsData;
+  }
+
   const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
 
   try {
     const res = await fetch(`${baseUrl}/api/news`, {
-      cache: 'no-store', // লেটেস্ট নিউজ পাওয়ার জন্য
+      cache: 'no-store',
     });
 
     if (!res.ok) throw new Error("Failed to fetch news");
@@ -32,13 +19,20 @@ export async function getAllNews() {
     return await res.json();
   } catch (error) {
     console.error("News fetch error:", error);
-    return [];
+    // Fallback to static data
+    return newsData;
   }
 }
 export async function getNewsById(id: string) {
+  // During build time or when API is not available, use static data
+  if (process.env.NODE_ENV === 'production' || !process.env.NEXT_PUBLIC_API_URL) {
+    const newsItem = newsData.find(item => item.id === id);
+    return newsItem || null;
+  }
+
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"}/api/news/${id}`, {
-      next: { revalidate: 60 },
+      cache: 'no-store',
     });
 
     if (!res.ok) {
@@ -48,7 +42,9 @@ export async function getNewsById(id: string) {
     return res.json();
   } catch (error) {
     console.error("News Fetch Error:", error);
-    return null;
+    // Fallback to static data
+    const newsItem = newsData.find(item => item.id === id);
+    return newsItem || null;
   }
 }
 // Simple function to get news by category
