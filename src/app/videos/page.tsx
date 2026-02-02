@@ -7,7 +7,7 @@ import { VideoItem } from "@/types";
 
 export default async function NewsPage() {
   const data = await getAllVideos();
-    console.log("Full API response:", data);
+    
 
   return (
     <>
