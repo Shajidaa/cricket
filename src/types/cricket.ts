@@ -38,6 +38,18 @@ export interface TypeMatch {
     seriesMatches: { seriesAdWrapper?: { matches: Match[] } }[];
 }
 
+export interface AppIndex {
+    seoTitle: string;
+    webURL: string;
+}
+
+export interface Filters {
+    matchType: string[];
+}
+
 export interface CricbuzzResponse {
+    appIndex: AppIndex;
+    filters: Filters;
+    responseLastUpdated: string;
     typeMatches: TypeMatch[];
 }
