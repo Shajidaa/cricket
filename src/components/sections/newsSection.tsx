@@ -47,7 +47,7 @@ export default function NewsSectionPage() {
                
                <button
                  onClick={() => setActiveTab(tab)}
-                 className={`px-10 py-4 font-bold transition-colors border-r border-gray-100 last:border-r-0 ${
+                 className={`md:px-10 md:py-4  px-4 py-2 font-bold transition-colors border-r border-gray-100 last:border-r-0 ${
                    activeTab === tab 
                      ? "text-black bg-white" 
                      : "text-gray-400 bg-white hover:bg-gray-50"
