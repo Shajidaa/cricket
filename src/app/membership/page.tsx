@@ -41,21 +41,6 @@ export default function MembershipPage() {
     fetchMembershipData();
   }, []);
 
-  if (loading) {
-    return (
-      <Container className="py-12">
-        <div className="animate-pulse">
-          <div className="h-8 bg-gray-200 rounded mb-4"></div>
-          <div className="h-4 bg-gray-200 rounded mb-8 w-2/3"></div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[...Array(4)].map((_, i) => (
-              <div key={i} className="h-64 bg-gray-200 rounded-xl"></div>
-            ))}
-          </div>
-        </div>
-      </Container>
-    );
-  }
 
   if (!membershipData) {
     return (

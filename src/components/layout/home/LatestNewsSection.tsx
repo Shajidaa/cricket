@@ -4,6 +4,7 @@ import { NewsItem } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import newsData from '@/data/news.json';
+import Container from '../Container';
 
 export default async function LatestNewsSection() {
   const allNews: NewsItem[] = newsData;
@@ -45,7 +46,7 @@ export default async function LatestNewsSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <Container className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
           {/* Featured Article (Left Side) */}
           <Link href={`/news/${featured.id}`} className="lg:col-span-7 group cursor-pointer">
@@ -87,7 +88,7 @@ export default async function LatestNewsSection() {
             ))}
           </div>
 
-        </div>
+        </Container>
       </div>
     </section>
   );
