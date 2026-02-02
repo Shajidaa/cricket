@@ -1,6 +1,8 @@
 import MatchCard from '@/components/cards/MatchCard';
 import Container from '@/components/layout/Container';
+
 import { getLiveMatches } from '@/services/liveMatchesService';
+
 import { Match } from '@/types/cricket';
 
 
@@ -9,15 +11,21 @@ import { Match } from '@/types/cricket';
 export default async function LiveMatchesPage() {
   const data = await getLiveMatches();
 
+
   const allMatches: Match[] = data.typeMatches?.flatMap(type =>
     type.seriesMatches.flatMap(series => series.seriesAdWrapper?.matches || [])
   ) || [];
-  console.log(allMatches);
+
 
   return (
-    <Container className="p-6 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold mb-6 text-red-700">Live Cricket Scores</h1>
-
+    <>
+    
+ <div className="mb-5 bg-gradient-to-r from-black via-red-950 to-red-600 text-white p-6 shadow-lg">
+           <h1 className="text-4xl md:text-5xl text-center font-black italic mb-8 pl-4 uppercase">
+             Live Cricket Scores
+           </h1>
+         </div>
+         <Container >
       {allMatches.length === 0 ? (
         <p className="text-gray-500">No live matches at the moment.</p>
       ) : (
@@ -30,10 +38,10 @@ export default async function LiveMatchesPage() {
           })}
         </div>
       )}
-    </Container>
+  </Container>
+    </>
   );
 }
-
 
 
 

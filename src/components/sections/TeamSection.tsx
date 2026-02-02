@@ -20,16 +20,15 @@ const teamData: TeamMember[] = [
 
 export default function TeamSection() {
   return (
-    <section className="py-16 md:py-24 bg-slate-50 overflow-hidden">
+    <>
+       <div className="mb-5 bg-gradient-to-r from-black via-red-950 to-red-600 text-white p-6 shadow-lg">
+           <h1 className="text-4xl md:text-5xl text-center font-black italic mb-8 pl-4 uppercase">
+               Coaching Staff
+           </h1>
+         </div>
       <div className="container mx-auto px-4 sm:px-6">
         
-        {/* Section Header */}
-        <div className="mb-12 md:mb-20 text-center">
-          <h2 className="text-3xl md:text-5xl font-black text-gray-900 uppercase tracking-tighter">
-            Coaching <span className="text-red-600">Staff</span>
-          </h2>
-          <div className="h-1.5 w-24 bg-red-600 mt-4 mx-auto"></div>
-        </div>
+       
 
         <div className="max-w-7xl mx-auto space-y-16 md:space-y-32">
           {teamData.map((member, index) => (
@@ -89,6 +88,6 @@ export default function TeamSection() {
       </div>
 
   
-    </section>
+    </>
   );
 }
