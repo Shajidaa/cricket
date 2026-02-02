@@ -1,21 +1,20 @@
+
+import playerData from '@/data/players.json';
+
 export async function getAllPlayers() {
+  // If we are on the server during build/runtime, return data directly
+  if (typeof window === 'undefined') {
+    return playerData;
+  }
+
+  // Fallback for client-side calls
   try {
-
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000"}/api/players`, {
-      next: { revalidate: 360 },
-    });
-
-    if (!res.ok) {
-      throw new Error('There was a problem loading the players.');
-    }
-
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/players`);
     return res.json();
   } catch (error) {
-    console.error("Players Fetch Error:", error);
-    return [];
+    return playerData; // Return local data as fallback
   }
 }
-
 
 export async function getPlayerById(id: string) {
   try {
