@@ -2,11 +2,11 @@
 import playerData from '@/data/players.json';
 
 export async function getAllPlayers() {
+
   // If we are on the server during build/runtime, return data directly
-  if (typeof window === 'undefined') {
+  if (typeof window === 'undefined' || process.env.NODE_ENV === 'production') {
     return playerData;
   }
-
   // Fallback for client-side calls
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || ""}/api/players`);
