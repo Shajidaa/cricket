@@ -14,7 +14,7 @@ interface ContainerProps extends ComponentPropsWithoutRef<'div'> {
 export default function Container({ children, className, ...props }: ContainerProps) {
     return (
         <div
-            className={cn("container mx-auto", className)}
+            className={cn("container mx-auto px-3", className)}
             {...props}
         >
             {children}

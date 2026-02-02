@@ -1,0 +1,174 @@
+{
+    "team": {
+        "team_name": "City Lions Cricket Club",
+        "team_code": "CLCC",
+        "established_year": 2005,
+        "home_ground": "City Cricket Stadium",
+        "team_category": "Senior Men's Team"
+    },
+    "memberships": {
+        "types": [
+            {
+                "id": "PLYR",
+                "name": "Playing Member",
+                "description": "Active playing squad member",
+                "annual_fee": 150.00,
+                "benefits": [
+                    "Full match participation rights",
+                    "Training facilities access",
+                    "Team kit provided",
+                    "Insurance coverage",
+                    "Voting rights"
+                ]
+            },
+            {
+                "id": "ASOC",
+                "name": "Associate Member",
+                "description": "Non-playing supporting member",
+                "annual_fee": 75.00,
+                "benefits": [
+                    "Clubhouse access",
+                    "Social events invitation",
+                    "Match viewing rights",
+                    "Newsletter subscription"
+                ]
+            },
+            {
+                "id": "JUNR",
+                "name": "Junior Member",
+                "description": "Under-18 playing member",
+                "annual_fee": 50.00,
+                "benefits": [
+                    "Coaching sessions",
+                    "Junior matches",
+                    "Skill development",
+                    "Parental consent required"
+                ]
+            },
+            {
+                "id": "LIFE",
+                "name": "Life Member",
+                "description": "Lifetime membership",
+                "annual_fee": 0.00,
+                "one_time_fee": 1000.00,
+                "benefits": [
+                    "All playing member benefits",
+                    "Lifetime validity",
+                    "VIP status",
+                    "Executive committee voting"
+                ]
+            }
+        ]
+    },
+    "members": [
+        {
+            "member_id": "CLCC2023001",
+            "personal_details": {
+                "first_name": "John",
+                "last_name": "Smith",
+                "date_of_birth": "1990-05-15",
+                "gender": "Male",
+                "nationality": "Australian",
+                "contact_number": "+61 412 345 678",
+                "email": "john.smith@email.com",
+                "address": {
+                    "street": "123 Cricket Lane",
+                    "city": "Melbourne",
+                    "state": "Victoria",
+                    "postcode": "3000",
+                    "country": "Australia"
+                }
+            },
+            "membership_details": {
+                "type": "PLYR",
+                "join_date": "2023-01-10",
+                "expiry_date": "2024-01-10",
+                "membership_status": "Active",
+                "payment_status": "Paid",
+                "emergency_contact": {
+                    "name": "Jane Smith",
+                    "relationship": "Spouse",
+                    "contact_number": "+61 423 456 789"
+                }
+            },
+            "cricket_details": {
+                "playing_role": "Batsman",
+                "batting_style": "Right-handed",
+                "bowling_style": "Right-arm medium",
+                "jersey_number": 7,
+                "preferred_position": "Opening Batsman",
+                "skill_level": "Advanced"
+            }
+        },
+        {
+            "member_id": "CLCC2023002",
+            "personal_details": {
+                "first_name": "Sarah",
+                "last_name": "Johnson",
+                "date_of_birth": "1995-08-22",
+                "gender": "Female",
+                "nationality": "Australian",
+                "contact_number": "+61 498 765 432",
+                "email": "sarah.j@email.com"
+            },
+            "membership_details": {
+                "type": "ASOC",
+                "join_date": "2023-02-15",
+                "expiry_date": "2024-02-15",
+                "membership_status": "Active",
+                "payment_status": "Pending"
+            }
+        }
+    ],
+    "seasons": [
+        {
+            "season_year": "2023-2024",
+            "start_date": "2023-09-01",
+            "end_date": "2024-03-31",
+            "registration_deadline": "2023-08-15",
+            "season_status": "Active"
+        }
+    ],
+    "fees_payments": [
+        {
+            "payment_id": "PAY001",
+            "member_id": "CLCC2023001",
+            "amount": 150.00,
+            "payment_date": "2023-01-10",
+            "payment_method": "Credit Card",
+            "transaction_id": "TXN123456",
+            "season": "2023-2024",
+            "status": "Completed"
+        }
+    ],
+    "health_records": [
+        {
+            "record_id": "HR001",
+            "member_id": "CLCC2023001",
+            "medical_conditions": "None",
+            "allergies": "None",
+            "blood_group": "O+",
+            "last_medical_check": "2023-01-05",
+            "fitness_status": "Fit",
+            "doctor_details": {
+                "name": "Dr. Williams",
+                "contact": "+61 3 9876 5432"
+            }
+        }
+    ],
+    "statistics": {
+        "total_members": 45,
+        "active_members": 40,
+        "playing_members": 25,
+        "associate_members": 15,
+        "junior_members": 5,
+        "life_members": 2,
+        "renewal_rate": "89%"
+    },
+    "metadata": {
+        "last_updated": "2023-11-20T14:30:00Z",
+        "version": "1.2",
+        "created_by": "Club Secretary",
+        "next_renewal_date": "2024-01-01"
+    }
+}
