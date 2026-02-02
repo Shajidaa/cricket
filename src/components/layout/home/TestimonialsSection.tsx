@@ -72,27 +72,6 @@ export default function TestimonialsSection() {
                     ))}
                 </div>
 
-                {/* Trust Indicators */}
-                <div className="mt-16 text-center">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
-                        <div className="text-center">
-                            <div className="text-2xl font-bold text-gray-700 mb-1">4.9/5</div>
-                            <div className="text-sm text-gray-500">User Rating</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-2xl font-bold text-gray-700 mb-1">50K+</div>
-                            <div className="text-sm text-gray-500">Active Users</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-2xl font-bold text-gray-700 mb-1">99.9%</div>
-                            <div className="text-sm text-gray-500">Uptime</div>
-                        </div>
-                        <div className="text-center">
-                            <div className="text-2xl font-bold text-gray-700 mb-1">24/7</div>
-                            <div className="text-sm text-gray-500">Support</div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     );

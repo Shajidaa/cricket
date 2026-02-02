@@ -7,6 +7,7 @@ import HeroSection from "@/components/layout/home/HeroSection";
 import LatestNewsSection from "@/components/layout/home/LatestNewsSection";
 import TestimonialsSection from "@/components/layout/home/TestimonialsSection";
 import CTASection from "@/components/layout/home/CTASection";
+import StatsSection from "@/components/sections/StatsSection";
 
 export default function Home() {
   return (
@@ -17,11 +18,7 @@ export default function Home() {
 
       {/* Latest News Section */}
       <LatestNewsSection />
-
-
-
-
-
+      <StatsSection />
 
       {/* Testimonials Section */}
       <TestimonialsSection />

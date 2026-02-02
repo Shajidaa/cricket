@@ -9,14 +9,11 @@ import {
   Calendar,
   CheckCircle,
   Star,
-  CreditCard,
+
   UserPlus,
   Shield,
   Award,
-  Clock,
-  MapPin,
-  Mail,
-  Phone
+
 } from 'lucide-react';
 
 export default function MembershipPage() {
@@ -73,39 +70,12 @@ export default function MembershipPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-red-600 via-red-700 to-red-800 text-white py-20">
-        <Container>
-          <div className="text-center max-w-4xl mx-auto">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <Trophy className="w-12 h-12 text-yellow-400" />
-              <h1 className="text-4xl md:text-5xl font-black italic uppercase">
-                {team.team_name}
-              </h1>
-            </div>
-
-            <p className="text-xl md:text-2xl mb-6 text-red-100">
-              Join our cricket family and be part of the legacy since {team.established_year}
-            </p>
-
-            <div className="flex flex-wrap justify-center gap-6 text-sm">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4" />
-                <span>{team.home_ground}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Users className="w-4 h-4" />
-                <span>{team.team_category}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Shield className="w-4 h-4" />
-                <span>Team Code: {team.team_code}</span>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
-
+  
+ <div className="bg-gradient-to-r from-black via-red-950 to-red-600 text-white p-6 shadow-lg">
+           <h1 className="text-4xl md:text-5xl text-center font-black italic mb-8 pl-4 uppercase">
+              {team.team_name}
+           </h1>
+         </div>
       {/* Statistics Section */}
       <section className="py-16 bg-white">
         <Container>
