@@ -25,9 +25,9 @@ export default function PlayerPage() {
 
   return (
     <div className="">
-      <div className="bg-gradient-to-r from-black via-red-950 to-red-600 text-white p-6 shadow-lg">
+      <div className="bg-gradient-to-r from-black via-red-950 to-red-600  text-white p-6 shadow-lg">
         {/* --- DYNAMIC TITLE --- */}
-        <h1 className="text-4xl md:text-5xl text-center font-black italic mb-8 pl-4 uppercase">
+        <h1 className="text-3xl md:text-5xl text-center font-black italic mb-8 pl-2 md:mb-8 md:pl-4 uppercase">
           {activeTab === "All" ? "Players" : `${activeTab} Players`}
         </h1>
       </div>
@@ -44,7 +44,7 @@ export default function PlayerPage() {
             
             <button
               onClick={() => setActiveTab(tab)}
-              className={`px-10 py-4 font-bold  transition-colors border-r border-yellow-100 last:border-r-0 ${
+              className={`px-5 py-4 md:px-10  font-bold  transition-colors border-r border-yellow-100 last:border-r-0 ${
                 activeTab === tab 
                   ? "text-black bg-white" 
                   : "text-gray-400 bg-white hover:bg-gray-50"

@@ -4,32 +4,62 @@ import Link from 'next/link'
 
 export default function PlayerCard({ player }: { player: Player }) {
   return (
-    <Link href={`/player/${player.id}`} className="group cursor-pointer relative bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
-      {/* Player Image with Gradient Overlay */}
-      <div className="relative h-64 overflow-hidden bg-gray-200">
-        <Image
-        fill
-          src={player.image} 
-          alt={player.name}
-          className="w-full h-full object-cover transition-scale duration-500 group-hover:scale-110"
-        />
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-          <span className="text-white text-3xl font-black italic opacity-50">#{player.number}</span>
-        </div>
+    <Link 
+      href={`/player/${player.id}`} 
+      className="group relative block w-full max-w-sm aspect-[3/4] overflow-hidden bg-[#231f20] shadow-xl transition-all duration-300 hover:scale-[1.02]"
+      style={{ 
+        // This clip-path creates the sharp angled bottom-right corner perfectly
+        clipPath: "polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%)" 
+      }}
+    >
+      {/* Background Gradient & Diagonal Stripes */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#d65b08]/40 to-black z-0" />
+      <div 
+        className="absolute inset-0 opacity-10 z-0" 
+        style={{
+          backgroundImage: `linear-gradient(135deg, transparent 25%, #fff 25%, #fff 50%, transparent 50%, transparent 75%, #fff 75%, #fff 100%)`,
+          backgroundSize: '40px 40px'
+        }} 
+      />
+
+      {/* Player Number */}
+      <div className="absolute top-4 left-6 z-20">
+        <span className="text-white group-hover:text-red-500 text-6xl font-black italic leading-none select-none opacity-90">
+          {player.number}
+        </span>
       </div>
 
-      {/* Player Details */}
-      <div className="p-5">
-        <div className="flex justify-between items-start mb-2">
-          <div>
-            <h3 className="text-xl font-extrabold text-gray-900 group-hover:text-red-500 leading-tight">{player.name}</h3>
-            <p className="text-xs font-semibold uppercase group-hover:text-black tracking-wider text-red-600">{player.personal_details.position}</p>
-          </div>
-          <span className="bg-gray-100 text-gray-700  text-[10px] px-2 py-1 rounded-full font-bold">
-            {player.league}
-          </span>
-        </div>
+      {/* Player Image */}
+      <div className="absolute inset-0 z-10">
+        <Image
+          fill
+          src={player.image}
+          alt={player.name}
+          className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          priority
+        />
+      </div>
 
+      {/* Content Overlay */}
+      <div className="absolute inset-0 z-20 flex flex-col justify-end p-6 bg-gradient-to-t from-black via-transparent to-transparent">
+        
+        {/* Role/Captain Tag */}
+        {player.personal_details.position === 'Captain' && (
+          <div className="mb-3">
+            <span className="bg-[#ffb800] text-black text-[10px] font-black uppercase px-3 py-1 skew-x-[-12deg] inline-block">
+              <span className="inline-block skew-x-[12deg]">Captain</span>
+            </span>
+          </div>
+        )}
+
+        <div className="space-y-1">
+          <h3 className="text-white text-3xl font-black uppercase italic leading-none tracking-tight transition-colors duration-300 group-hover:text-red-600">
+            {player.name}
+          </h3>
+          <p className="text-white text-sm font-medium opacity-90 transition-colors duration-300 group-hover:text-red-500">
+            {player.personal_details.position}
+          </p>
+        </div>
       </div>
     </Link>
   )
