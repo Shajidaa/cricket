@@ -11,7 +11,7 @@ const navItems = [
     { name: 'Videos', href: '/videos' },
     { name: 'Team', href: '/team' },
     { name: 'Players', href: '/player' },
-    { name: 'Membership', href: '/membership' },
+    { name: 'Member', href: '/membership' },
 ];
 
 function Navbar() {
