@@ -21,8 +21,10 @@ export default async function PlayerDetails({ params }: { params: Promise<{ id: 
 
   return (
     <div className="min-h-screen bg-white">
+        
       {/* 1. Hero Section - Adjusted for mobile height */}
       <div className="relative bg-[#8B0000] text-white overflow-hidden min-h-[500px] md:min-h-[400px] flex items-end">
+    
         <div className="absolute inset-0 opacity-20 bg-[url('/city-silhouette.png')] bg-bottom bg-repeat-x"></div>
         
         <div className="container mx-auto px-4 md:px-6 pb-8 md:pb-16 relative z-10 flex flex-col md:flex-row justify-between items-center md:items-end">
@@ -120,9 +122,20 @@ export default async function PlayerDetails({ params }: { params: Promise<{ id: 
                 <PlayerCard key={player.id} player={player} />
               ))}
             </div>
+                <Link
+          href="/player"
+          className="inline-flex items-center text-red-600 mt-5 hover:text-red-700 mb-6 transition-colors"
+        >
+          <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+          Back to Players
+        </Link>
           </div>
+
         </div>
       )}
+        
     </div>
   )
 }
