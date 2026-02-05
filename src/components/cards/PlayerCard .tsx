@@ -6,10 +6,10 @@ export default function PlayerCard({ player }: { player: Player }) {
   return (
     <Link 
       href={`/player/${player.id}`} 
-      className="group relative block w-full max-w-sm aspect-[3/4] overflow-hidden bg-[#231f20] shadow-xl transition-all duration-300 hover:scale-[1.02]"
+      className="group relative block w-full max-w-sm aspect-3/4 overflow-hidden bg-[#231f20] shadow-xl transition-all duration-300 hover:scale-[1.02]"
       style={{ 
         // This clip-path creates the sharp angled bottom-right corner perfectly
-        clipPath: "polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%)" 
+        clipPath: "polygon(0 0, 100% 0, 100% 95%, 95% 100%, 0 100%)" 
       }}
     >
       {/* Background Gradient & Diagonal Stripes */}
@@ -47,7 +47,7 @@ export default function PlayerCard({ player }: { player: Player }) {
         {player.personal_details.position === 'Captain' && (
           <div className="mb-3">
             <span className="bg-[#ffb800] text-black text-[10px] font-black uppercase px-3 py-1 skew-x-[-12deg] inline-block">
-              <span className="inline-block skew-x-[12deg]">Captain</span>
+              <span className="inline-block skew-x-12">Captain</span>
             </span>
           </div>
         )}

@@ -27,7 +27,7 @@ export default function PlayerPage() {
     <div className="">
       <div className="bg-gradient-to-r from-black via-red-950 to-red-600  text-white p-6 shadow-lg">
         {/* --- DYNAMIC TITLE --- */}
-        <h1 className="text-3xl md:text-5xl text-center font-black italic mb-8 pl-2 md:mb-8 md:pl-4 uppercase">
+        <h1 className="text-3xl md:text-5xl text-center font-black italic mb-8 pl-2 md:mb-8 md:p-8 uppercase">
           {activeTab === "All" ? "Players" : `${activeTab} Players`}
         </h1>
       </div>
@@ -57,7 +57,7 @@ export default function PlayerPage() {
       </div>
 
       {/* --- Grid Display --- */}
-      <div className="container mx-auto py-10 px-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="container mx-auto py-10 px-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredPlayers.length > 0 ? (
           filteredPlayers.map((player: Player) => (
             <PlayerCard key={player.id} player={player} />
