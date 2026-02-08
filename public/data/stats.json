@@ -6,14 +6,20 @@
       { "rank": 2, "player": "Courtney Webb", "value": 176 },
       { "rank": 3, "player": "Alice Capsey", "value": 170 },
       { "rank": 4, "player": "Nicole Faltum", "value": 153 },
-      { "rank": 5, "player": "Sophie Molineux", "value": 96 }
+      { "rank": 5, "player": "Sophie Molineux", "value": 96 },
+      { "rank": 6, "player": "Deandra Dottin", "value": 88 },
+      { "rank": 7, "player": "Hayley Matthews", "value": 82 },
+      { "rank": 8, "player": "Josie Dooley", "value": 75 }
     ],
     "most_wickets": [
       { "rank": 1, "player": "Georgia Wareham", "value": 19 },
       { "rank": 2, "player": "Alice Capsey", "value": 13 },
       { "rank": 3, "player": "Milly Illingworth", "value": 9 },
       { "rank": 4, "player": "Tess Flintoff", "value": 7 },
-      { "rank": 5, "player": "Deandra Dottin", "value": 6 }
+      { "rank": 5, "player": "Deandra Dottin", "value": 6 },
+      { "rank": 6, "player": "Sophie Molineux", "value": 5 },
+      { "rank": 7, "player": "Sarah Coyte", "value": 4 },
+      { "rank": 8, "player": "Shabnim Ismail", "value": 4 }
     ],
     "standings": {
       "team_focus": {
@@ -25,7 +31,11 @@
         { "rank": 1, "team": "Hobart Hurricanes Women", "points": 15 },
         { "rank": 2, "team": "Sydney Sixers Women", "points": 13 },
         { "rank": 3, "team": "Perth Scorchers Women", "points": 12 },
-        { "rank": 4, "team": "Melbourne Stars Women", "points": 11 }
+        { "rank": 4, "team": "Melbourne Stars Women", "points": 11 },
+        { "rank": 5, "team": "Melbourne Renegades Women", "points": 10 },
+        { "rank": 6, "team": "Adelaide Strikers Women", "points": 8 },
+        { "rank": 7, "team": "Brisbane Heat Women", "points": 6 },
+        { "rank": 8, "team": "Sydney Thunder Women", "points": 4 }
       ]
     }
   }
