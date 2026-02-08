@@ -29,7 +29,7 @@ function Navbar() {
                                 <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                                     <span className="text-primary-foreground font-bold text-sm">C</span>
                                 </div>
-                                <span className="text-xl text-white font-bold text-foreground group-hover:text-primary transition-colors duration-200">
+                                <span className="text-xl  text-white font-bold text-foreground group-hover:text-primary transition-colors duration-200">
                                     CricketHub
                                 </span>
                             </div>

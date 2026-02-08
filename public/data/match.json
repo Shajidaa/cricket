@@ -1,0 +1,128 @@
+[
+  {
+    "match_info": "KFC BBL|15 · The Final",
+    "date": "25 January 2026",
+    "venue": "Perth Stadium, Perth",
+    "result": "Perth Scorchers win by 6 wickets with 15 balls remaining",
+    "teams": {
+      "home": {
+        "name": "Perth Scorchers Men",
+        "score": "4-133",
+        "overs": 17.3
+      },
+      "away": {
+        "name": "Sydney Sixers Men",
+        "score": "132",
+        "overs": 20.0
+      }
+    }
+  },
+  {
+    "match_info": "KFC BBL|15 · The Qualifier",
+    "date": "20 January 2026",
+    "venue": "Perth Stadium, Perth",
+    "result": "Perth Scorchers win by 48 runs",
+    "teams": {
+      "home": {
+        "name": "Perth Scorchers Men",
+        "score": "9-147",
+        "overs": 20.0
+      },
+      "away": {
+        "name": "Sydney Sixers Men",
+        "score": "99",
+        "overs": 15.0
+      }
+    }
+  },
+  {
+    "match_info": "KFC BBL|15 · Match 39",
+    "date": "17 January 2026",
+    "venue": "Optus Stadium, Perth",
+    "result": "Perth Scorchers win by 6 wickets with 19 balls remaining",
+    "teams": {
+      "home": {
+        "name": "Perth Scorchers Men",
+        "score": "4-134",
+        "overs": 16.5
+      },
+      "away": {
+        "name": "Melbourne Stars Men",
+        "score": "130",
+        "overs": 18.2
+      }
+    }
+  },
+  {
+    "match_info": "KFC BBL|15 · Match 36",
+    "date": "15 January 2026",
+    "venue": "Marvel Stadium, Melbourne",
+    "result": "Perth Scorchers win by 50 runs",
+    "teams": {
+      "home": {
+        "name": "Melbourne Renegades Men",
+        "score": "7-169",
+        "overs": null
+      },
+      "away": {
+        "name": "Perth Scorchers Men",
+        "score": "7-219",
+        "overs": null
+      }
+    }
+  },
+  {
+    "match_info": "KFC BBL|15 · Match 32",
+    "date": "11 January 2026",
+    "venue": "Adelaide Oval, Adelaide",
+    "result": "Perth Scorchers win by 32 runs",
+    "teams": {
+      "home": {
+        "name": "Adelaide Strikers Men",
+        "score": "8-200",
+        "overs": null
+      },
+      "away": {
+        "name": "Perth Scorchers Men",
+        "score": "4-232",
+        "overs": null
+      }
+    }
+  },
+  {
+    "match_info": "KFC BBL|15 · Match 26",
+    "date": "7 January 2026",
+    "venue": "Optus Stadium, Perth",
+    "result": "Melbourne Renegades win by 4 wickets from the last ball",
+    "teams": {
+      "home": {
+        "name": "Perth Scorchers Men",
+        "score": "127",
+        "overs": 19.2
+      },
+      "away": {
+        "name": "Melbourne Renegades Men",
+        "score": "6-130",
+        "overs": 20.0
+      }
+    }
+  },
+  {
+    "match_info": "KFC BBL|15 · Match 23",
+    "date": "4 January 2026",
+    "venue": "Optus Stadium, Perth",
+    "result": "Perth Scorchers win by 33 runs",
+    "teams": {
+      "home": {
+        "name": "Perth Scorchers Men",
+        "score": "8-153",
+        "overs": 20.0
+      },
+      "away": {
+        "name": "Adelaide Strikers Men",
+        "score": "120",
+        "overs": 18.1
+      }
+    }
+  }
+]
