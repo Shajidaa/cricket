@@ -16,8 +16,7 @@ export default function Home() {
       {/* Latest News Section */}
       <LatestNewsSection />
 
-      {/* Video Section */}
-      <VideoSection />
+     
 
       {/* Stats Section */}
       <StatsSection />

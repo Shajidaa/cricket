@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Player } from '@/types';
 import PlayerCard from '@/components/cards/PlayerCard ';
-import { Users, ArrowRight, Filter } from 'lucide-react';
+import { Users, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import Container from '../Container';
 
