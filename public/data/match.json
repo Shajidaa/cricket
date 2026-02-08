@@ -4,6 +4,7 @@
     "date": "25 January 2026",
     "venue": "Perth Stadium, Perth",
     "result": "Perth Scorchers win by 6 wickets with 15 balls remaining",
+    "status": "complete",
     "teams": {
       "home": {
         "name": "Perth Scorchers Men",
@@ -22,6 +23,7 @@
     "date": "20 January 2026",
     "venue": "Perth Stadium, Perth",
     "result": "Perth Scorchers win by 48 runs",
+    "status": "complete",
     "teams": {
       "home": {
         "name": "Perth Scorchers Men",
@@ -40,6 +42,7 @@
     "date": "17 January 2026",
     "venue": "Optus Stadium, Perth",
     "result": "Perth Scorchers win by 6 wickets with 19 balls remaining",
+    "status": "complete",
     "teams": {
       "home": {
         "name": "Perth Scorchers Men",
@@ -58,6 +61,7 @@
     "date": "15 January 2026",
     "venue": "Marvel Stadium, Melbourne",
     "result": "Perth Scorchers win by 50 runs",
+    "status": "complete",
     "teams": {
       "home": {
         "name": "Melbourne Renegades Men",
@@ -76,6 +80,7 @@
     "date": "11 January 2026",
     "venue": "Adelaide Oval, Adelaide",
     "result": "Perth Scorchers win by 32 runs",
+    "status": "complete",
     "teams": {
       "home": {
         "name": "Adelaide Strikers Men",
@@ -94,6 +99,7 @@
     "date": "7 January 2026",
     "venue": "Optus Stadium, Perth",
     "result": "Melbourne Renegades win by 4 wickets from the last ball",
+    "status": "complete",
     "teams": {
       "home": {
         "name": "Perth Scorchers Men",
@@ -112,6 +118,7 @@
     "date": "4 January 2026",
     "venue": "Optus Stadium, Perth",
     "result": "Perth Scorchers win by 33 runs",
+    "status": "complete",
     "teams": {
       "home": {
         "name": "Perth Scorchers Men",

@@ -3,6 +3,7 @@ import MatchCard from '@/components/cards/MatchCard';
 import React, { useEffect, useState } from 'react';
 import { Calendar, MapPin, Trophy } from 'lucide-react';
 import Container from '@/components/layout/Container';
+import { match } from 'assert';
 
 interface Team {
   name: string;
@@ -15,19 +16,20 @@ interface Match {
   date: string;
   venue: string;
   result: string;
+  status: string;
   teams: {
     home: Team;
     away: Team;
   };
 }
 
-type FilterType = 'all' | 'live' | 'completed' | 'upcoming';
+type FilterType = 'all' | 'live' | 'complete' | 'upcoming';
 type LeagueType = 'all' | 'bbl' | 'wbbl';
 
 const MatchResultsPage: React.FC = () => {
   const [matchData, setMatchData] = useState<Match[]>([]);
   const [filteredMatches, setFilteredMatches] = useState<Match[]>([]);
-  const [activeFilter, setActiveFilter] = useState<FilterType>('completed');
+  const [activeFilter, setActiveFilter] = useState<FilterType>('complete');
   const [activeLeague, setActiveLeague] = useState<LeagueType>('all');
   const [loading, setLoading] = useState(true);
 
@@ -57,7 +59,16 @@ const MatchResultsPage: React.FC = () => {
         match.match_info.toLowerCase().includes(activeLeague)
       );
     }
+if (activeFilter === 'complete') {
+    filtered = filtered.filter(match => match.status == 'complete');
 
+   
+  } else if (activeFilter === 'live') {
+    // If status is not 'complete', we treat it as live/upcoming
+     filtered = filtered.filter(match => match.status !== 'complete');
+  }
+
+  setFilteredMatches(filtered);
     setFilteredMatches(filtered);
   }, [activeFilter, activeLeague, matchData]);
 
@@ -84,6 +95,7 @@ const MatchResultsPage: React.FC = () => {
       </div>
     );
   }
+
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -113,8 +125,8 @@ const MatchResultsPage: React.FC = () => {
                 Live & Upcoming
               </button>
               <button
-                onClick={() => setActiveFilter('completed')}
-                className={`px-6 py-2 rounded-md transition-all ${activeFilter === 'completed'
+                onClick={() => setActiveFilter('complete')}
+                className={`px-6 py-2 rounded-md transition-all ${activeFilter === 'complete'
                   ? 'bg-red-600 text-white shadow-lg'
                   : 'text-white hover:bg-white/10'
                   }`}
@@ -192,14 +204,12 @@ const MatchResultsPage: React.FC = () => {
               <Trophy className="w-12 h-12 text-gray-400" />
             </div>
             <h3 className="text-gray-600 text-xl font-semibold mb-4">
-              No matches found
+              No matches live or upcoming at the moment.
             </h3>
-            <p className="text-gray-500 mb-6">
-              Try selecting a different filter or check back later.
-            </p>
+           
             <button
               onClick={() => {
-                setActiveFilter('completed');
+                setActiveFilter('complete');
                 setActiveLeague('all');
               }}
               className="px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors"
