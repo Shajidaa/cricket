@@ -12,6 +12,7 @@ const navItems = [
     { name: 'Team', href: '/team' },
     { name: 'Players', href: '/player' },
     { name: 'Member', href: '/membership' },
+    { name: 'Contact', href: '/contact' },
 ];
 
 function Navbar() {
@@ -37,7 +38,7 @@ function Navbar() {
                     </div>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:block">
+                    <div className="hidden lg:block">
                         <div className="flex items-center space-x-1">
                             {navItems.map((item) => {
                                 const isActive = pathname === item.href ||
@@ -63,7 +64,7 @@ function Navbar() {
                     </div>
 
                     {/* Mobile menu button */}
-                    <div className="md:hidden">
+                    <div className="lg:hidden">
                         <button
                             type="button"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

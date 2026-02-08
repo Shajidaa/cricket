@@ -9,6 +9,7 @@ interface Team {
 interface Match {
   match_info: string;
   date: string;
+  status: string;
   venue: string;
   result: string;
   teams: {
