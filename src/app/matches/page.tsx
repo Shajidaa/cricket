@@ -59,16 +59,16 @@ const MatchResultsPage: React.FC = () => {
         match.match_info.toLowerCase().includes(activeLeague)
       );
     }
-if (activeFilter === 'complete') {
-    filtered = filtered.filter(match => match.status == 'complete');
+    if (activeFilter === 'complete') {
+      filtered = filtered.filter(match => match.status == 'complete');
 
-   
-  } else if (activeFilter === 'live') {
-    // If status is not 'complete', we treat it as live/upcoming
-     filtered = filtered.filter(match => match.status !== 'complete');
-  }
 
-  setFilteredMatches(filtered);
+    } else if (activeFilter === 'live') {
+      // If status is not 'complete', we treat it as live/upcoming
+      filtered = filtered.filter(match => match.status !== 'complete');
+    }
+
+    setFilteredMatches(filtered);
     setFilteredMatches(filtered);
   }, [activeFilter, activeLeague, matchData]);
 
@@ -206,7 +206,7 @@ if (activeFilter === 'complete') {
             <h3 className="text-gray-600 text-xl font-semibold mb-4">
               No matches live or upcoming at the moment.
             </h3>
-           
+
             <button
               onClick={() => {
                 setActiveFilter('complete');

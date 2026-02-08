@@ -64,10 +64,7 @@ export default function VideoSection({
         }
     }, [activeCategory, videos, limit]);
 
-    const getCategoryCount = (category: string): number => {
-        if (category === 'All') return videos.length;
-        return videos.filter(video => video.category === category).length;
-    };
+    
 
     const formatDate = (dateString: string) => {
         const date = new Date(dateString);
@@ -78,38 +75,7 @@ export default function VideoSection({
         });
     };
 
-    if (loading) {
-        return (
-            <section className={`py-16 bg-gray-50 ${className}`}>
-                {showHeader && (
-                    <div className="mb-5 bg-gradient-to-r from-black via-red-950 to-red-600 text-white p-6 shadow-lg">
-                        <div className="flex container mx-auto p-5 justify-between items-end mb-8">
-                            <h1 className="text-5xl font-black italic text-white tracking-tighter border-l-8 border-red-600 pl-4 uppercase">
-                                Latest Videos
-                            </h1>
-                            <div className="hidden md:block bg-white px-4 py-1 rounded-sm text-black font-bold text-[10px] tracking-widest">
-                                POWERED BY <span className="text-blue-600">LIBERTY</span>
-                            </div>
-                        </div>
-                    </div>
-                )}
-
-                <div className="container mx-auto px-4">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {[...Array(6)].map((_, i) => (
-                            <div key={i} className="bg-white rounded-lg shadow-md overflow-hidden animate-pulse">
-                                <div className="h-48 bg-gray-200"></div>
-                                <div className="p-4">
-                                    <div className="h-4 bg-gray-200 rounded mb-2"></div>
-                                    <div className="h-4 bg-gray-200 rounded w-3/4"></div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-        );
-    }
+   
 
 
 
@@ -213,7 +179,7 @@ export default function VideoSection({
                             <Video className="w-12 h-12 text-gray-400" />
                         </div>
                         <h3 className="text-gray-600 text-xl font-semibold mb-4">
-                            No videos found in "{activeCategory}" category
+                            No videos found in &quot;{activeCategory}&quot; category
                         </h3>
                         <p className="text-gray-500 mb-6">
                             Try selecting a different category or check back later.
