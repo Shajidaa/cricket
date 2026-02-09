@@ -15,8 +15,8 @@ const navItems = [
             { name: 'Matches', href: '/matches' },
             { name: 'Coaches', href: '/team' },
             { name: 'Club Partners', href: '/partners' },
-            { name: 'Blaze & Amber', href: '/blaze-amber' },
-            { name: 'Stay in the know', href: '/newsletter' },
+            { name: 'Blaze & Amber', href: '/blaze' },
+         
             { name: 'Contact', href: '/contact' },
         ] 
     },

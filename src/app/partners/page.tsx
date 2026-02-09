@@ -1,13 +1,10 @@
 "use client";
 import Container from "@/components/layout/Container";
+import { Partner } from "@/types/partner";
 import { useEffect, useState } from "react";
 
 // Defining an interface makes your code much easier to manage
-interface Partner {
-  company: string;
-  description: string;
-  website: string;
-}
+
 
 export default function Partners() {
   const [partnersData, setPartnersData] = useState<Partner[] | null>(null);
