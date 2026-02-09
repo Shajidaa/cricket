@@ -14,14 +14,7 @@ export interface NewsItem {
   tags: string[]
 }
 
-export interface VideoItem {
-  id: number;
-  title: string;
-  video_link: string;
-  date: string;
-  category: string;
-  description: string;
-}
+
 
 
 export interface Player {
