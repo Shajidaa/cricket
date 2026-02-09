@@ -1,0 +1,32 @@
+{
+  "partnerships": [
+    {
+      "company": "Peet",
+      "description": "Peet creates communities where people find their home all across Australia. They are industry experts in defining future places of belonging, offering choices in townhouses, apartments, and family homes with a focus on environmental sustainability.",
+      "website": "peet.com.au"
+    },
+       {
+        "company": "Budget Direct Insurance",
+        "description": "Since 2000, Budget Direct has had Insurance Solved for more than three million Australians. They are multi-award winning, including Money magazine's Insurer of the Year for nine years in a row (2017-25).",
+        "website": "budgetdirect.com.au"
+      }
+       ,
+      {
+        "company": "Westside Auto",
+        "description": "A proudly West Australian born and family-owned business operating since 2002. As Australia's largest independent used car dealership, they stock over 3,000 vehicles under one roof at their Bentley warehouse.",
+        "website": "westsideauto.com.au"
+      }
+         ,
+      {
+        "company": "BMD",
+        "description": "Australia's leading integrated engineering, construction, and urban development business. Founded on family values, BMD delivers infrastructure solutions that connect and transform communities.",
+        "website": "bmdgroup.com.au"
+      },
+      {
+        "company": "Komatsu",
+        "description": "A global provider of essential equipment, technologies, and services for the construction, mining, forklift, industrial, and forestry markets, focusing on a sustainable future where people, business, and the planet thrive together.",
+        "website": "komatsu.com.au"
+      }
+    
+    ]
+}
